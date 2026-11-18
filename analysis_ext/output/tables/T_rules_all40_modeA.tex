@@ -1,0 +1,13 @@
+\footnotesize
+\begingroup\setlength{\tabcolsep}{9pt}
+\begin{tabular}{lcccccc}
+\toprule
+Rule & LR & KNN & SVR & KRR & RT & HINNPerf \\
+\midrule
+MEAN & \begin{tabular}[t]{@{}c@{}}24.9\\{(1.07)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}19.4\\{(1.40)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}20.9\\{(1.10)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}12.2\\{(1.10)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}8.7\\{(1.82)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}6.4\\{(1.80)}\end{tabular} \\
+MEDIAN & \begin{tabular}[t]{@{}c@{}}25.0\\{(1.07)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}18.1\\{\textbf{(1.10)}}\end{tabular} & \begin{tabular}[t]{@{}c@{}}20.5\\{\textbf{(1.00)}}\end{tabular} & \begin{tabular}[t]{@{}c@{}}12.0\\{\textbf{(1.00)}}\end{tabular} & \begin{tabular}[t]{@{}c@{}}8.2\\{\textbf{(1.15)}}\end{tabular} & \begin{tabular}[t]{@{}c@{}}6.0\\{\textbf{(1.05)}}\end{tabular} \\
+IRWM & \begin{tabular}[t]{@{}c@{}}24.1\\{\textbf{(1.00)}}\end{tabular} & \begin{tabular}[t]{@{}c@{}}18.3\\{(1.45)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}20.3\\{(1.10)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}11.9\\{(1.07)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}8.5\\{(1.60)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}6.0\\{(1.35)}\end{tabular} \\
+\bottomrule
+\multicolumn{7}{p{11.5cm}}{\scriptsize Per rule, $k$ chosen per scenario by OOB Borda among that rule's ensembles. Cell: median MRE (\%) over scenarios; in brackets the mean SK rank of the rule (SK per scenario over the three rules, 30 runs; bold: lowest). Scope: 40 scenarios (8 systems x 5 sample sizes), 30 runs each.} \\
+\end{tabular}
+\endgroup

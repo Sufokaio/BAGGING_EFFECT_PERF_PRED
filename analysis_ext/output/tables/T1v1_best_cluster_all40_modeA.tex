@@ -1,0 +1,18 @@
+\footnotesize
+\begingroup\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccccccc}
+\toprule
+Learner & \multicolumn{4}{c}{SK best cluster (MRE)} & \multicolumn{4}{c}{Borda rank 1 (4 metrics)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+ & Single & \begin{tabular}[t]{@{}c@{}}Single\\{only}\end{tabular} & \begin{tabular}[t]{@{}c@{}}Any\\{bagging}\end{tabular} & \begin{tabular}[t]{@{}c@{}}Bagging\\{only}\end{tabular} & Single & \begin{tabular}[t]{@{}c@{}}Single\\{only}\end{tabular} & \begin{tabular}[t]{@{}c@{}}Any\\{bagging}\end{tabular} & \begin{tabular}[t]{@{}c@{}}Bagging\\{only}\end{tabular} \\
+\midrule
+LR & 26 & 1 & 39 & 14 & 6 & 6 & 34 & 34 \\
+KNN & 23 & 5 & 35 & 17 & 9 & 9 & 31 & 31 \\
+SVR & 40 & 25 & 15 & 0 & 32 & 32 & 8 & 8 \\
+KRR & 34 & 11 & 29 & 6 & 30 & 30 & 10 & 10 \\
+RT & 16 & 1 & 39 & 24 & 5 & 5 & 35 & 35 \\
+HINNPerf & 28 & 10 & 30 & 12 & 21 & 21 & 19 & 19 \\
+\bottomrule
+\multicolumn{9}{p{11.5cm}}{\scriptsize Number of scenarios (of 40 per learner). SK: Scott-Knott on the 30 per-run MRE values over Single and the 27 bagging variants of the learner (bootstrap $t$, conf 0.01, $A_{12}\geq0.60$); Borda: sum of SK ranks over MRE, MAE, MBRE, MIBRE; rank 1 is unique per scenario: ties on the Borda sum are broken by the mean MAE over the 30 runs (then by the model identifier). Single / Any bagging: Single / at least one bagging variant at the top (SK best cluster: ties counted for both); Single only / Bagging only: at the top and the other side not. } \\
+\end{tabular}
+\endgroup

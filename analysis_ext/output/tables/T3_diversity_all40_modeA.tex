@@ -1,0 +1,16 @@
+\footnotesize
+\begingroup\setlength{\tabcolsep}{9pt}
+\begin{tabular}{lcccc}
+\toprule
+Learner & Error corr. & Pred. corr. & Rel. ambiguity & Acc. spread \\
+\midrule
+LR & 0.94 & 0.97 & 0.06 & 1.18 \\
+KNN & 0.60 & 0.70 & 0.36 & 1.16 \\
+SVR & 0.99 & 0.93 & 0.04 & 1.16 \\
+KRR & 0.78 & 0.94 & 0.23 & 1.24 \\
+RT & 0.46 & 0.90 & 0.51 & 1.32 \\
+HINNPerf & 0.61 & 0.97 & 0.38 & 1.33 \\
+\bottomrule
+\multicolumn{5}{p{11.5cm}}{\scriptsize Diversity of the $k=10$ ensemble members, median over the scenarios (per scenario: mean over the 30 runs). Error / Pred. corr.: mean pairwise correlation of the members' errors / predictions on the test set (1: identical members). Rel. ambiguity: how far the members spread around the ensemble prediction, relative to their average error (Krogh--Vedelsby; 0: no diversity). Acc. spread: mean member MRE / best member MRE (1: equally accurate members).} \\
+\end{tabular}
+\endgroup

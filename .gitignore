@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+**/__pycache__/
+
+# Virtual environment
+venv/
+.venv/
+
+# Results folder
+results/
+
+
+
+
+
+times.txt
+
+
+# Extended experiments: checkpoints, logs and caches
+results_ext/**/_ckpt/
+results_ext/*.log
+results_ext/times_ext.txt
+results_ext/run_members.*
+analysis_ext/cache/

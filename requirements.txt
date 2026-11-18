@@ -1,0 +1,9 @@
+numpy==1.22.1
+pandas==1.5.1
+scikit-learn==1.2.2
+tensorflow==2.10.1
+tqdm==4.67.1
+matplotlib==3.7.3
+joblib==1.5.3
+pyarrow==12.0.1
+threadpoolctl==3.7.0

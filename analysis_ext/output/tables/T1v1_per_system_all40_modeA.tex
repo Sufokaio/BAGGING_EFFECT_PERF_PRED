@@ -1,0 +1,20 @@
+\footnotesize
+\begingroup\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccccccc}
+\toprule
+System & \multicolumn{4}{c}{SK best cluster (MRE)} & \multicolumn{4}{c}{Borda rank 1 (4 metrics)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+ & Single & \begin{tabular}[t]{@{}c@{}}Single\\{only}\end{tabular} & \begin{tabular}[t]{@{}c@{}}Any\\{bagging}\end{tabular} & \begin{tabular}[t]{@{}c@{}}Bagging\\{only}\end{tabular} & Single & \begin{tabular}[t]{@{}c@{}}Single\\{only}\end{tabular} & \begin{tabular}[t]{@{}c@{}}Any\\{bagging}\end{tabular} & \begin{tabular}[t]{@{}c@{}}Bagging\\{only}\end{tabular} \\
+\midrule
+APACHE & 19 & 4 & 26 & 11 & 12 & 12 & 18 & 18 \\
+BDB-C & 27 & 10 & 20 & 3 & 15 & 15 & 15 & 15 \\
+KANZI & 20 & 7 & 23 & 10 & 12 & 12 & 18 & 18 \\
+X264 & 26 & 15 & 15 & 4 & 22 & 22 & 8 & 8 \\
+HIPACC & 21 & 8 & 22 & 9 & 16 & 16 & 14 & 14 \\
+HSMGP & 17 & 9 & 21 & 13 & 14 & 14 & 16 & 16 \\
+DUNE & 17 & 0 & 30 & 13 & 4 & 4 & 26 & 26 \\
+LRZIP & 20 & 0 & 30 & 10 & 8 & 8 & 22 & 22 \\
+\bottomrule
+\multicolumn{9}{p{11.5cm}}{\scriptsize Number of learner $\times$ sample-size scenarios per system (of 30: 6 learners $\times$ 5 sizes). Same SK and Borda as the per-learner table (Single and its 27 bagging variants); Borda rank 1 is unique per scenario: ties on the Borda sum are broken by the mean MAE over the 30 runs (then by the model identifier). Single / Any bagging: at the top (SK best cluster: ties counted for both); Single only / Bagging only: at the top and the other side not.} \\
+\end{tabular}
+\endgroup
